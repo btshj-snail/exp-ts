@@ -1,28 +1,23 @@
 /*
- * @Author: snail 
- * @Date: 2019-04-15 16:49:57 
+ * @Author: snail
+ * @Date: 2019-04-25 17:28:25
  * @Last Modified by: snail
- * @Last Modified time: 2019-04-15 17:09:29
+ * @Last Modified time: 2019-04-26 09:33:28
  */
 
-
-
-class Student {
-    fullName:string;
-    constructor(public firstName,public middleInitial,public lastName){
-        this.fullName = firstName + " " + middleInitial + " "+lastName;
-    }
-
+interface Person {
+  name: string;
+  age: number;
 }
 
-interface Person{
-    firstName:String,
-    lastName:String,
-    fullName:String
-}
-function greeter(person:Person){
-    return "hello, "+person.fullName;
-}
-let user = new Student("Jack","d","Tomues")
 
-document.body.innerHTML = greeter(user);
+const tom: Person = {
+    name: 'Tom',
+    age: 253,
+};
+
+if (tom.age === 25) {
+    console.log(`${tom.name} is 25 years old.`);
+}
+
+export { Person };
