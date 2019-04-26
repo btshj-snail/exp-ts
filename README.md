@@ -30,19 +30,19 @@
 
 注意eslint.validate数组里面的元素。
 
-- 3. 安装eslint
+- 3.安装eslint
 
     npm install eslint --save-dev
 
-- 4. 生成eslint配置文件
+- 4.生成eslint配置文件
 
     eslint --init
 
-- 5. 使用包管理工具，添加eslint对typescript支持的插件
+- 5.使用包管理工具，添加eslint对typescript支持的插件
 
     npm install --save-dev @typescript-eslint/eslint-plugin babel-eslint eslint-config-alloy eslint-plugin-typescrip typescript-eslint-parser
 
-- 6. 打开刚生成的eslint配置文件（我生成的是.eslintrc.js） 进行相应调整
+- 6.打开刚生成的eslint配置文件（我生成的是.eslintrc.js） 进行相应调整
 
 ```
 module.exports = {
